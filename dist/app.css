@@ -92,3 +92,13 @@ main .bottom-main {
   background-color: coral;
 }
 
+footer {
+  width: 80%;
+  margin: 0 auto;
+  content: "";
+  display: table;
+  clear: both;
+  height: 400px;
+  background-color: lightyellow;
+}
+

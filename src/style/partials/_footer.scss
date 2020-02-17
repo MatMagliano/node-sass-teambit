@@ -1,0 +1,7 @@
+footer {
+  @include centerPage;
+  @include clearfix;
+  height: $heightCenter;
+  background-color: lightyellow;
+
+}
