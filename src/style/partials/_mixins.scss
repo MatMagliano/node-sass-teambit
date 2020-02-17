@@ -1,0 +1,9 @@
+@mixin centerPage {
+width: $width80;
+margin: $marginAuto;
+}
+@mixin clearfix {
+content: '';
+display: table;
+clear: both;
+}

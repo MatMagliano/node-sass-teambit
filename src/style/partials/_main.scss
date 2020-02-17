@@ -1,0 +1,39 @@
+main {
+  @include centerPage;
+  .top-main {
+    @include clearfix;
+    width: $width100;
+    height: 800px;
+    background-color: $primaryColor;
+  }
+  .feedback {
+    @include clearfix;
+    width: $width100;
+    height: $heightCenter;
+    background-color: coral;
+  }
+  .surveys {
+    @include clearfix;
+    width: $width100;
+    height: $heightCenter;
+    background-color: lightyellow;
+  }
+  .reviews {
+    @include clearfix;
+    height: $heightCenter;
+    width: $width100;
+    background-color: lightgreen;
+  }
+  .praise {
+    @include clearfix;
+    width: $width100;
+    height: $heightCenter;
+    background-color: silver;
+  }
+  .bottom-main {
+    @include clearfix;
+    width: $width100;
+    height: $heightCenter;
+    background-color: coral;
+  }
+}

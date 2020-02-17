@@ -1,6 +1,5 @@
 header {
-  width: $width80;
-  margin: $marginAuto;
+  @include centerPage;
   height: 800px;
   background-color: coral;
   .nav {
@@ -12,5 +11,8 @@ header {
     width: 100%;
     height: calc(800px - 150px);
     background-color: lightgreen;
+    &::after{
+      @include clearfix;
+    }
   }
 }
