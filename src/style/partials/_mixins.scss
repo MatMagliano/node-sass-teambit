@@ -1,3 +1,7 @@
+@mixin centerPage100 {
+width: $width100;
+margin: $marginAuto;
+}
 @mixin centerPage {
 width: $width80;
 margin: $marginAuto;
@@ -6,4 +10,24 @@ margin: $marginAuto;
 content: '';
 display: table;
 clear: both;
+}
+@mixin fixed {
+position: fixed;
+z-index: 2;
+top: 0;
+left: 0;
+}
+@mixin flexRow {
+display: flex;
+align-items: center;
+}
+@mixin flexRowBetween {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+@mixin aLinks {
+  text-decoration: none;
+  color: #5a432c;
+  margin-left: 20px;
 }
