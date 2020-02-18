@@ -11,12 +11,14 @@ header {
       @include centerPage;
       @include flexRowBetween;
       .left {
+        width: 30%;
         img {
           width: 150px;
         }
       }
       .rigth {
-        @include flexRow;
+        width: 70%;
+        @include flexRowEnd;
         font-size: .9em;
         ul {
           list-style: none;

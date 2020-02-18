@@ -4,9 +4,21 @@
 
 /* WIDTH */
 
-/* FLOAT */
-
 /* COLOR */
+
+/* DISPLAY FLEX */
+
+/* POSITION */
+
+/* CLEARFIX */
+
+/* WIDTH */
+
+/* LINK */
+
+/* BUTTON */
+
+/* FLOAT */
 
 * {
   margin: 0;
@@ -35,19 +47,15 @@ h1 {
   align-items: center;
 }
 
-/* DISPLAY FLEX */
+.rigth {
+  float: left;
+  width: 50%;
+}
 
-/* POSITION */
-
-/* CLEARFIX */
-
-/* WIDTH */
-
-/* LINK */
-
-/* BUTTON */
-
-/* FLOAT */
+.left {
+  float: left;
+  width: 50%;
+}
 
 header {
   width: 100%;
@@ -74,12 +82,18 @@ header .nav .wrapper {
   align-items: center;
 }
 
+header .nav .wrapper .left {
+  width: 30%;
+}
+
 header .nav .wrapper .left img {
   width: 150px;
 }
 
 header .nav .wrapper .rigth {
+  width: 70%;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   font-size: 0.9em;
 }
@@ -96,6 +110,10 @@ header .nav .wrapper .rigth ul li a {
   text-decoration: none;
   color: #5c4632;
   margin-left: 20px;
+}
+
+header .nav .wrapper .rigth ul li a:hover {
+  color: #324691;
 }
 
 header .nav .wrapper .rigth ul li a i {
@@ -148,8 +166,6 @@ header .jumbo::after {
 }
 
 header .jumbo .left {
-  float: left;
-  width: 50%;
   padding: 40px 0;
 }
 
@@ -195,9 +211,8 @@ header .jumbo .left a {
   font-size: 0.85em;
 }
 
-header .jumbo .rigth {
-  float: left;
-  width: 50%;
+header .jumbo .left a:hover {
+  color: #324691;
 }
 
 header .jumbo .rigth img {
@@ -273,6 +288,8 @@ footer {
   background-color: lightyellow;
 }
 
+/* NAV */
+
 @media screen and (max-width: 767px) {
   .bars-menu {
     display: block;
@@ -280,6 +297,26 @@ footer {
 
   .list-menu {
     display: none;
+  }
+}
+
+/* JUMBO */
+
+@media screen and (max-width: 1140px) {
+  header .jumbo .left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .jumbo .left .btn-jumbo {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .jumbo .rigth {
+    float: none;
+    width: 100%;
   }
 }
 

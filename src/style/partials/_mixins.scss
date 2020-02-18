@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
 }
+@mixin flexRowEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 @mixin flexRowBetween {
   display: flex;
   justify-content: space-between;
@@ -38,6 +43,9 @@
 @mixin aLinks {
   text-decoration: none;
   color: $colorFont;
+  &:hover {
+    color: $colorBtn;
+  }
 }
 
 /* BUTTON */
@@ -74,6 +82,6 @@
 
 /* FLOAT */
 @mixin floatLeft {
-  float: $floatLeft;
+  float: left;
   width: 50%;
 }

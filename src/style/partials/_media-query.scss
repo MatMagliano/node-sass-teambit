@@ -10,7 +10,17 @@
 
 /* JUMBO */
 @media screen and (max-width: 1140px) {
-  .left {
+  header .jumbo .left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  header .jumbo .left .btn-jumbo{
+    display: flex;
+    justify-content: center;
+  }
+  header .jumbo .rigth {
+    float: none;
     width: 100%;
   }
 }
