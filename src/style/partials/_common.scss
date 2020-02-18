@@ -12,3 +12,17 @@ body {
   display: none;
   font-size: 2em;
 }
+h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+}
+.btn-jumbo {
+  display: flex;
+  align-items: center;
+}
+.rigth {
+  @include floatLeft;
+}
+.left {
+  @include floatLeft;
+}

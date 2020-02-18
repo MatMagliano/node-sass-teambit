@@ -38,7 +38,6 @@
 @mixin aLinks {
   text-decoration: none;
   color: $colorFont;
-  margin-left: 20px;
 }
 
 /* BUTTON */
@@ -56,4 +55,25 @@
   &:hover {
     cursor: pointer;
   }
+}
+@mixin btnBig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: $colorBtn;
+  border: 1px solid $colorBtn;
+  border-radius: 5px;
+  font-size: .85em;
+  color: $colorWhite;
+  &:hover {
+    cursor: pointer;
+    background-color: darken($colorBtn, 10);
+  }
+}
+
+/* FLOAT */
+@mixin floatLeft {
+  float: $floatLeft;
+  width: 50%;
 }
