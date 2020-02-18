@@ -1,33 +1,59 @@
-@mixin centerPage100 {
-width: $width100;
-margin: $marginAuto;
-}
-@mixin centerPage {
-width: $width80;
-margin: $marginAuto;
-}
-@mixin clearfix {
-content: '';
-display: table;
-clear: both;
-}
-@mixin fixed {
-position: fixed;
-z-index: 2;
-top: 0;
-left: 0;
-}
+/* DISPLAY FLEX */
 @mixin flexRow {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 @mixin flexRowBetween {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* POSITION */
+@mixin fixed {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+/* CLEARFIX */
+@mixin clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* WIDTH */
+@mixin centerPage100 {
+  width: $width100;
+  margin: $marginAuto;
+}
+@mixin centerPage {
+  width: $width80;
+  margin: $marginAuto;
+}
+
+/* LINK */
 @mixin aLinks {
   text-decoration: none;
-  color: #5a432c;
+  color: $colorFont;
   margin-left: 20px;
+}
+
+/* BUTTON */
+@mixin btnSmall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 35px;
+  border: 1px solid $colorBtn;
+  border-radius: 5px;
+  font-size: $fonSize;
+  font-weight: 700;
+  color: $colorBtn;
+  &:hover {
+    cursor: pointer;
+  }
 }
