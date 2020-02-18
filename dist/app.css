@@ -32,20 +32,38 @@ body {
   color: #5c4632;
 }
 
+/* CONTEINER */
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .bars-menu {
   display: none;
   font-size: 2em;
 }
+
+/* TYPO */
 
 h1 {
   font-size: 3.5em;
   font-weight: 500;
 }
 
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* BUTTON */
+
 .btn-jumbo {
   display: flex;
   align-items: center;
 }
+
+/* FLOAT */
 
 .rigth {
   float: left;
@@ -75,8 +93,6 @@ header .nav {
 }
 
 header .nav .wrapper {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,7 +133,7 @@ header .nav .wrapper .rigth ul li a:hover {
 }
 
 header .nav .wrapper .rigth ul li a i {
-  margin-bottom: 5px;
+  vertical-align: baseline;
   font-size: 1.2em;
 }
 
@@ -220,7 +236,7 @@ header .jumbo .rigth img {
 }
 
 main {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -229,8 +245,73 @@ main .top-main {
   display: table;
   clear: both;
   width: 100%;
-  height: 800px;
+  padding: 100px 0;
   background-color: #f7ead7;
+}
+
+main .top-main h2 {
+  margin-bottom: 100px;
+}
+
+main .top-main .wrapper {
+  text-align: center;
+}
+
+main .top-main .wrapper-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+main .top-main .wrapper-center .wrapper-center-left {
+  width: 400px;
+  text-align: center;
+}
+
+main .top-main .wrapper-center .wrapper-center-left img {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+main .top-main .wrapper-center .wrapper-center-middle {
+  width: 400px;
+  text-align: center;
+}
+
+main .top-main .wrapper-center .wrapper-center-middle img {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+main .top-main .wrapper-center .wrapper-center-right {
+  width: 400px;
+  text-align: center;
+}
+
+main .top-main .wrapper-center .wrapper-center-right img {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+main .top-main .wrapper-center .wrapper-center-right .safe {
+  width: 18%;
+}
+
+main .top-main .wrapper img {
+  width: 300px;
+  margin-bottom: 100px;
+}
+
+main .top-main .wrapper .after-img {
+  margin-bottom: 0;
+}
+
+main .top-main .wrapper .mid-row {
+  width: 50%;
+  margin: 0 auto 100px;
+  border-bottom: 1px solid silver;
 }
 
 main .feedback {
@@ -317,6 +398,14 @@ footer {
   header .jumbo .rigth {
     float: none;
     width: 100%;
+  }
+}
+
+/* TOP MAIN */
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    flex-wrap: wrap;
   }
 }
 

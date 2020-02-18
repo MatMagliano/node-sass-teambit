@@ -1,10 +1,60 @@
 main {
-  @include centerPage;
+  @include centerPage100;
   .top-main {
     @include clearfix;
     width: $width100;
-    height: 800px;
+    padding: 100px 0;
     background-color: $primaryColor;
+    h2 {
+      margin-bottom: 100px;
+    }
+    .wrapper {
+      text-align: center;
+      &-center {
+        width: 100%;
+        @include flexRowCenter;
+        margin-bottom: 100px;
+        .wrapper-center-left {
+          width: 400px;
+          text-align: center;
+          img {
+            width: 45%;
+            margin-bottom: 20px;
+          }
+        }
+        .wrapper-center-middle {
+          width: 400px;
+          text-align: center;
+          img {
+            width: 45%;
+            margin-bottom: 20px;
+          }
+        }
+        .wrapper-center-right {
+          width: 400px;
+          text-align: center;
+          img {
+            width: 30%;
+            margin-bottom: 20px;
+          }
+          .safe {
+            width: 18%;
+          }
+        }
+      }
+      img {
+        width: 300px;
+        margin-bottom: 100px;
+      }
+      .after-img {
+        margin-bottom: 0;
+      }
+      .mid-row {
+        width: 50%;
+        margin: 0 auto 100px;
+        border-bottom: 1px solid silver;
+      }
+    }
   }
   .feedback {
     @include clearfix;

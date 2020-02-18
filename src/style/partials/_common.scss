@@ -8,18 +8,33 @@ body {
   font-size: $fonSize;
   color: $colorFont;
 }
+
+/* CONTEINER */
+.wrapper {
+  @include centerPage;
+}
 .bars-menu {
   display: none;
   font-size: 2em;
 }
+
+/* TYPO */
 h1 {
   font-size: 3.5em;
   font-weight: 500;
 }
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* BUTTON */
 .btn-jumbo {
   display: flex;
   align-items: center;
 }
+
+/* FLOAT */
 .rigth {
   @include floatLeft;
 }

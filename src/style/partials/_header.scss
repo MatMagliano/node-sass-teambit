@@ -8,7 +8,6 @@ header {
     background-color: #FFF;
     border-bottom: 1px solid $colorFont;
     .wrapper {
-      @include centerPage;
       @include flexRowBetween;
       .left {
         width: 30%;
@@ -28,7 +27,7 @@ header {
               @include aLinks;
               margin-left: 20px;
               i {
-                margin-bottom: 5px;
+                vertical-align: baseline;
                 font-size: 1.2em;
               }
             }
