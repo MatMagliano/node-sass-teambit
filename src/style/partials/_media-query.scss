@@ -27,7 +27,14 @@
 
 /* TOP MAIN */
 @media screen and  (max-width: 767px) {
-  .wrapper {
+  .wrapper-center {
     flex-wrap: wrap;
   }
+  .wrapper-center-left {
+    margin-bottom: 40px;
+  }
+  .wrapper-center-middle {
+    margin-bottom: 40px;
+  }
+
 }
